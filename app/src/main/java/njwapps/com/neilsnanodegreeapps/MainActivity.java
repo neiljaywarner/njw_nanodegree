@@ -1,9 +1,13 @@
 package njwapps.com.neilsnanodegreeapps;
 
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.Toast;
 
 public class MainActivity extends ActionBarActivity {
 
@@ -11,6 +15,21 @@ public class MainActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        ViewGroup viewGroupButtons = (ViewGroup) findViewById(R.id.viewGroupButtons);
+
+        int childCount = viewGroupButtons.getChildCount();
+        for (int i=0; i < childCount; i++) {
+            Button button = (Button) viewGroupButtons.getChildAt(i);
+            button.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+
+                    Button button = (Button) v;
+                    Toast.makeText(v.getContext(), button.getText(), Toast.LENGTH_LONG).show();
+                }
+            });
+        }
     }
 
     @Override
