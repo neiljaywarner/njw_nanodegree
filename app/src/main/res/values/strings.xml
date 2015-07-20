@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Neil\'s Nanodegree Apps</string>
+
+    <string name="caption">My Nanodegree Apps!</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Should I do spotify app? It sounds fun... -->
+    <string name="app_1">Popular Movies App</string>
+    <string name="app_2">Scores App</string>
+    <string name="app_3">Library App</string>
+    <string name="app_4">Build It Bigger</string>
+    <string name="app_5">XYZ Reader</string>
+    <string name="app_6">Capstone</string>
+
+
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="purple">#9C27B0</color>
+    <color name="deep_purple">#673AB7</color>
+    <color name="deep_orange">#FF5722</color>
+    <color name="teal">#009688</color>
+    <color name="brown">#795548</color>
+    <color name="lime">#CDDC39</color>
+
+<!-- idea is to use the same color scheme when you actually open the app -->
+</resources>
